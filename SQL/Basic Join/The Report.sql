@@ -1,0 +1,15 @@
+/*
+ Enter your query here.
+ */
+SELECT
+   IF(GRADE > 7, NAME, NULL),
+   GRADE,
+   MARKS
+FROM
+   STUDENTS
+   JOIN GRADES
+WHERE
+   MARKS BETWEEN MIN_MARK AND MAX_MARK
+ORDER BY
+   GRADE DESC,
+   NAME
