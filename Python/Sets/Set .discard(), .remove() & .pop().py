@@ -5,5 +5,5 @@ for _ in range(int(input())):
     args = command[1:]
     command = command[0]
     command += "(" + ",".join(args) + ")"
-    eval("s."+command)
+    eval("s." + command)
 print(sum(s))

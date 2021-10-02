@@ -2,4 +2,4 @@
 
 A = set(map(int, input().split()))
 print(all([A.issuperset(set(map(int, input().split())))
-      for i in range(int(input()))]))
+           for i in range(int(input()))]))

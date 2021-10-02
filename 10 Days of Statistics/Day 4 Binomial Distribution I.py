@@ -11,11 +11,11 @@ def comb(n, k):
 
 
 def binom(k, n, p):
-    return comb(n, k) * p**k * (1 - p)**(n-k)
+    return comb(n, k) * p ** k * (1 - p) ** (n - k)
 
 
 n = 6
 boys, girls = map(float, input().split())
 p = boys / (boys + girls)
 
-print(f"{sum([binom(x, n, p) for x in range(3,7)]):.3f}")
+print(f"{sum([binom(x, n, p) for x in range(3, 7)]):.3f}")

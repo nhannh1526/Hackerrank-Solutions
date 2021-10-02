@@ -1,10 +1,5 @@
 #!/bin/python3
 
-import math
-import os
-import random
-import re
-import sys
 
 #
 # Complete the 'interQuartile' function below.
@@ -18,8 +13,8 @@ import sys
 def median(arr):
     length_arr = len(arr)
     if length_arr % 2 == 0:
-        return int(sum(sorted(arr)[int(length_arr/2-1):int(length_arr/2+1)])/2)
-    return sorted(arr)[int((length_arr + 1)/2-1)]
+        return int(sum(sorted(arr)[int(length_arr / 2 - 1):int(length_arr / 2 + 1)]) / 2)
+    return sorted(arr)[int((length_arr + 1) / 2 - 1)]
 
 
 def interQuartile(values, freqs):
@@ -29,12 +24,12 @@ def interQuartile(values, freqs):
         arr += [values[i]] * freqs[i]
     arr.sort()
     length_arr = len(arr)
-    Q1 = median(arr[:int(length_arr/2)])
+    Q1 = median(arr[:int(length_arr / 2)])
     if length_arr % 2 == 0:
-        Q3 = median(arr[int(length_arr/2):])
+        Q3 = median(arr[int(length_arr / 2):])
     else:
-        Q3 = median(arr[int(length_arr/2+1):])
-    print(f"{Q3-Q1:.1f}")
+        Q3 = median(arr[int(length_arr / 2 + 1):])
+    print(f"{Q3 - Q1:.1f}")
 
 
 if __name__ == '__main__':

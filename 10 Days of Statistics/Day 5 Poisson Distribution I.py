@@ -4,7 +4,7 @@ import math
 
 
 def poisson(k, mu):
-    return math.exp(-mu) * mu**k / math.factorial(k)
+    return math.exp(-mu) * mu ** k / math.factorial(k)
 
 
 mu, x = float(input()), int(input())

@@ -1,12 +1,5 @@
 #!/bin/python3
 
-import math
-import os
-import random
-import re
-import sys
-
-
 if __name__ == '__main__':
     n = int(input().strip())
 
@@ -16,9 +9,9 @@ if __name__ == '__main__':
     numberOfSwaps = 0
     for i in range(n):
         currentSwaps = 0
-        for j in range(n-1):
-            if a[j] > a[j+1]:
-                a[j], a[j+1] = a[j+1], a[j]
+        for j in range(n - 1):
+            if a[j] > a[j + 1]:
+                a[j], a[j + 1] = a[j + 1], a[j]
                 currentSwaps += 1
         if currentSwaps == 0:
             break

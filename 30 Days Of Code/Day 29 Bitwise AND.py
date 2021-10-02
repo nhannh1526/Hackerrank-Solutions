@@ -1,10 +1,7 @@
 #!/bin/python3
 
-import math
 import os
-import random
-import re
-import sys
+
 
 #
 # Complete the 'bitwiseAnd' function below.
@@ -20,7 +17,7 @@ def bitwiseAnd(N, K):
     # Write your code here
     result = 0
     for i in range(N, 0, -1):
-        for j in range(i - 1, 0,  -1):
+        for j in range(i - 1, 0, -1):
             current = i & j
             if result < current < K:
                 result = current

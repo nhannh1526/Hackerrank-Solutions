@@ -4,7 +4,7 @@ import math
 
 
 def cdf(x, loc, scale):
-    return 0.5 * (1 + math.erf((x - loc) / (scale * 2**0.5)))
+    return 0.5 * (1 + math.erf((x - loc) / (scale * 2 ** 0.5)))
 
 
 mu, sigma = map(int, input().split())

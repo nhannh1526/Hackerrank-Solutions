@@ -1,6 +1,7 @@
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 
 import statistics
+
 from scipy import stats
 
 N = int(input())

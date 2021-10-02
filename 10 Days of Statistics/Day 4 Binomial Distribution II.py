@@ -11,9 +11,9 @@ def comb(n, k):
 
 
 def binom(k, n, p):
-    return comb(n, k) * p**k * (1 - p)**(n-k)
+    return comb(n, k) * p ** k * (1 - p) ** (n - k)
 
 
 p, n = map(int, input().split())
-print(f"{sum([binom(x, n, p*0.01) for x in range(3)]):.3f}",
-      f"{sum([binom(x, n, p*0.01) for x in range(2, 11)]):.3f}", sep="\n")
+print(f"{sum([binom(x, n, p * 0.01) for x in range(3)]):.3f}",
+      f"{sum([binom(x, n, p * 0.01) for x in range(2, 11)]):.3f}", sep="\n")

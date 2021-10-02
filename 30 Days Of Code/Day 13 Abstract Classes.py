@@ -9,6 +9,7 @@ class Book(object, metaclass=ABCMeta):
     @abstractmethod
     def display(): pass
 
+
 # Write MyBook class
 
 

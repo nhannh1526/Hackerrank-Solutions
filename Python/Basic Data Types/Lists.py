@@ -9,4 +9,4 @@ if __name__ == '__main__':
             print(_list)
         else:
             command += "(" + ",".join(args) + ")"
-            eval("_list."+command)
+            eval("_list." + command)

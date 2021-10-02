@@ -10,4 +10,4 @@ marks = []
 for i in range(N):
     marks.append(int(student(*input().split()).MARKS))
 
-print(f"{sum(marks)/len(marks):.2f}")
+print(f"{sum(marks) / len(marks):.2f}")

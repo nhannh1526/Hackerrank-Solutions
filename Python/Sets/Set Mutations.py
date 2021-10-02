@@ -7,6 +7,6 @@ for _ in range(int(input())):
     cmd, b = input().split()
     B = set(map(int, input().split()))
     cmd += f"({B})"
-    eval("A."+cmd)
+    eval("A." + cmd)
 
 print(sum(A))

@@ -4,4 +4,4 @@ from itertools import permutations
 
 S, k = input().split()
 print(*["".join(chars)
-      for chars in list(permutations(sorted(S), int(k)))], sep="\n")
+        for chars in list(permutations(sorted(S), int(k)))], sep="\n")

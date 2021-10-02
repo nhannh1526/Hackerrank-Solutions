@@ -7,7 +7,7 @@ class Calculator(AdvancedArithmetic):
     def divisorSum(self, n):
         divisors = []
         i = 1
-        while i <= n**0.5:
+        while i <= n ** 0.5:
             if n % i == 0:
                 if n / i == i:
                     divisors.append(i)

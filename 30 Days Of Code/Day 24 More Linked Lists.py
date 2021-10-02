@@ -13,7 +13,7 @@ class Solution:
             head.next = p
         else:
             start = head
-            while(start.next != None):
+            while (start.next != None):
                 start = start.next
             start.next = p
         return head

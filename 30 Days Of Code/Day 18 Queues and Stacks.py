@@ -1,6 +1,3 @@
-import sys
-
-
 class Solution:
     # Write your code here
     def __init__(self):
@@ -43,6 +40,6 @@ for i in range(l // 2):
         break
 # finally print whether string s is palindrome or not.
 if isPalindrome:
-    print("The word, "+s+", is a palindrome.")
+    print("The word, " + s + ", is a palindrome.")
 else:
-    print("The word, "+s+", is not a palindrome.")
+    print("The word, " + s + ", is not a palindrome.")

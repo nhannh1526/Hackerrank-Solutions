@@ -1,10 +1,5 @@
 #!/bin/python3
 
-import math
-import os
-import random
-import re
-import sys
 
 #
 # Complete the 'weightedMean' function below.
@@ -17,7 +12,7 @@ import sys
 
 def weightedMean(X, W):
     # Write your code here
-    print(round(sum([x * w for x, w in zip(X, W)])/sum(W), 1))
+    print(round(sum([x * w for x, w in zip(X, W)]) / sum(W), 1))
 
 
 if __name__ == '__main__':

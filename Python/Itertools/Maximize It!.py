@@ -5,5 +5,5 @@ from itertools import product
 K, M = map(int, input().split())
 N = tuple([list(map(int, input().split()))[1:] for _ in range(K)])
 
-results = tuple(map(lambda x: sum(i**2 for i in x) % M, product(*N)))
+results = tuple(map(lambda x: sum(i ** 2 for i in x) % M, product(*N)))
 print(max(results))
