@@ -1,10 +1,6 @@
 #!/bin/python3
 
-import math
 import os
-import random
-import re
-import sys
 
 
 class SinglyLinkedListNode:
@@ -37,6 +33,7 @@ def print_singly_linked_list(node, sep, fptr):
 
         if node:
             fptr.write(sep)
+
 
 #
 # Complete the 'removeDuplicates' function below.

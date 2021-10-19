@@ -1,10 +1,6 @@
 #!/bin/python3
 
-import math
 import os
-import random
-import re
-import sys
 
 
 class SinglyLinkedListNode:
@@ -37,6 +33,7 @@ def print_singly_linked_list(node, sep, fptr):
 
         if node:
             fptr.write(sep)
+
 
 # Complete the has_cycle function below.
 
@@ -86,7 +83,7 @@ if __name__ == '__main__':
             if i == index:
                 extra = temp
 
-            if i != llist_count-1:
+            if i != llist_count - 1:
                 temp = temp.next
 
         temp.next = extra
