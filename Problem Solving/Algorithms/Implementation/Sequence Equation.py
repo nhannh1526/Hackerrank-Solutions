@@ -6,6 +6,7 @@ import random
 import re
 import sys
 
+
 #
 # Complete the 'permutationEquation' function below.
 #
@@ -15,7 +16,7 @@ import sys
 
 
 def permutationEquation(p):
-    return [p.index(p.index(i)+1)+1 for i in range(1, len(p) + 1)]
+    return [p.index(p.index(i) + 1) + 1 for i in range(1, len(p) + 1)]
 
 
 if __name__ == '__main__':
