@@ -1,8 +1,6 @@
 /*
  Enter your query here.
  */
-SELECT
-   CITY,
-   STATE
-FROM
-   STATION
+SELECT CITY,
+       STATE
+FROM STATION
