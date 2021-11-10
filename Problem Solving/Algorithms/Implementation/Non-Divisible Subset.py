@@ -1,10 +1,7 @@
 #!/bin/python3
 
-import math
 import os
-import random
-import re
-import sys
+
 
 #
 # Complete the 'nonDivisibleSubset' function below.
@@ -24,11 +21,11 @@ def nonDivisibleSubset(k, s):
         f[val % k] += 1
 
     if k % 2 == 0:
-        f[k//2] = min(f[k//2], 1)
+        f[k // 2] = min(f[k // 2], 1)
 
     res = min(f[0], 1)
 
-    for i in range(1, (k//2) + 1):
+    for i in range(1, (k // 2) + 1):
         res += max(f[i], f[k - i])
     return res
 
