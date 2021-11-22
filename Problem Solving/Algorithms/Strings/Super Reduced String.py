@@ -6,6 +6,7 @@ import random
 import re
 import sys
 
+
 #
 # Complete the 'superReducedString' function below.
 #
